@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/bopohaa/grafana/pkg/components/simplejson"
+	"github.com/bopohaa/grafana/pkg/setting"
 	"github.com/gosimple/slug"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/setting"
 )
 
 // Typed errors

@@ -6,8 +6,8 @@ import (
 	"github.com/go-xorm/xorm"
 	. "github.com/smartystreets/goconvey/convey"
 
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/search"
+	m "github.com/bopohaa/grafana/pkg/models"
+	"github.com/bopohaa/grafana/pkg/services/search"
 )
 
 func TestDashboardFolderDataAccess(t *testing.T) {

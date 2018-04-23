@@ -4,10 +4,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/metrics"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/bopohaa/grafana/pkg/bus"
+	"github.com/bopohaa/grafana/pkg/log"
+	"github.com/bopohaa/grafana/pkg/metrics"
+	m "github.com/bopohaa/grafana/pkg/models"
 )
 
 type RuleReader interface {

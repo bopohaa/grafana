@@ -4,11 +4,11 @@ import (
 	"math/rand"
 	"time"
 
+	"github.com/bopohaa/grafana/pkg/log"
 	"github.com/go-macaron/session"
 	_ "github.com/go-macaron/session/memcache"
 	_ "github.com/go-macaron/session/postgres"
 	_ "github.com/go-macaron/session/redis"
-	"github.com/grafana/grafana/pkg/log"
 	"gopkg.in/macaron.v1"
 )
 

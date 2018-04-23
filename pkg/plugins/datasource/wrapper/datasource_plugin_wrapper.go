@@ -5,10 +5,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/grafana/grafana/pkg/components/null"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/tsdb"
+	"github.com/bopohaa/grafana/pkg/components/null"
+	"github.com/bopohaa/grafana/pkg/log"
+	"github.com/bopohaa/grafana/pkg/models"
+	"github.com/bopohaa/grafana/pkg/tsdb"
 	"github.com/grafana/grafana_plugin_model/go/datasource"
 )
 

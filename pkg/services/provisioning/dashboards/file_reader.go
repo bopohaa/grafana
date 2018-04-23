@@ -9,13 +9,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/grafana/grafana/pkg/services/dashboards"
+	"github.com/bopohaa/grafana/pkg/services/dashboards"
 
-	"github.com/grafana/grafana/pkg/bus"
+	"github.com/bopohaa/grafana/pkg/bus"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/models"
+	"github.com/bopohaa/grafana/pkg/components/simplejson"
+	"github.com/bopohaa/grafana/pkg/log"
+	"github.com/bopohaa/grafana/pkg/models"
 )
 
 var (

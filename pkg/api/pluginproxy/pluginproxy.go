@@ -7,12 +7,12 @@ import (
 	"net/http/httputil"
 	"net/url"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/middleware"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/plugins"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/bopohaa/grafana/pkg/bus"
+	"github.com/bopohaa/grafana/pkg/log"
+	"github.com/bopohaa/grafana/pkg/middleware"
+	m "github.com/bopohaa/grafana/pkg/models"
+	"github.com/bopohaa/grafana/pkg/plugins"
+	"github.com/bopohaa/grafana/pkg/util"
 )
 
 type templateData struct {

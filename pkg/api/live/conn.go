@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/bopohaa/grafana/pkg/components/simplejson"
+	"github.com/bopohaa/grafana/pkg/log"
 	"github.com/gorilla/websocket"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/log"
 )
 
 const (

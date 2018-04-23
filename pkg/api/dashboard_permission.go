@@ -3,11 +3,11 @@ package api
 import (
 	"time"
 
-	"github.com/grafana/grafana/pkg/api/dtos"
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/middleware"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/guardian"
+	"github.com/bopohaa/grafana/pkg/api/dtos"
+	"github.com/bopohaa/grafana/pkg/bus"
+	"github.com/bopohaa/grafana/pkg/middleware"
+	m "github.com/bopohaa/grafana/pkg/models"
+	"github.com/bopohaa/grafana/pkg/services/guardian"
 )
 
 func GetDashboardPermissionList(c *middleware.Context) Response {

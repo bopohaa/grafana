@@ -1,11 +1,11 @@
 package api
 
 import (
+	"github.com/bopohaa/grafana/pkg/api/avatar"
+	"github.com/bopohaa/grafana/pkg/api/dtos"
+	"github.com/bopohaa/grafana/pkg/middleware"
+	m "github.com/bopohaa/grafana/pkg/models"
 	"github.com/go-macaron/binding"
-	"github.com/grafana/grafana/pkg/api/avatar"
-	"github.com/grafana/grafana/pkg/api/dtos"
-	"github.com/grafana/grafana/pkg/middleware"
-	m "github.com/grafana/grafana/pkg/models"
 )
 
 // Register adds http routes

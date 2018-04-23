@@ -9,12 +9,12 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/bopohaa/grafana/pkg/components/null"
+	"github.com/bopohaa/grafana/pkg/log"
+	"github.com/bopohaa/grafana/pkg/models"
+	"github.com/bopohaa/grafana/pkg/tsdb"
 	"github.com/go-sql-driver/mysql"
 	"github.com/go-xorm/core"
-	"github.com/grafana/grafana/pkg/components/null"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/tsdb"
 )
 
 type MysqlQueryEndpoint struct {

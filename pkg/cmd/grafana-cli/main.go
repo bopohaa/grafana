@@ -5,11 +5,11 @@ import (
 	"os"
 	"runtime"
 
+	"github.com/bopohaa/grafana/pkg/cmd/grafana-cli/commands"
+	"github.com/bopohaa/grafana/pkg/cmd/grafana-cli/logger"
+	"github.com/bopohaa/grafana/pkg/cmd/grafana-cli/services"
+	"github.com/bopohaa/grafana/pkg/cmd/grafana-cli/utils"
 	"github.com/codegangsta/cli"
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/commands"
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/logger"
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/services"
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/utils"
 )
 
 var version = "master"

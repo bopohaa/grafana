@@ -4,8 +4,8 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/bopohaa/grafana/pkg/bus"
 	"github.com/go-macaron/session"
-	"github.com/grafana/grafana/pkg/bus"
 	. "github.com/smartystreets/goconvey/convey"
 	"gopkg.in/macaron.v1"
 )

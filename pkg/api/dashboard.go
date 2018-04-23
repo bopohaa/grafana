@@ -6,20 +6,20 @@ import (
 	"os"
 	"path"
 
-	"github.com/grafana/grafana/pkg/services/dashboards"
+	"github.com/bopohaa/grafana/pkg/services/dashboards"
 
-	"github.com/grafana/grafana/pkg/api/dtos"
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/components/dashdiffs"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/metrics"
-	"github.com/grafana/grafana/pkg/middleware"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/plugins"
-	"github.com/grafana/grafana/pkg/services/guardian"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/bopohaa/grafana/pkg/api/dtos"
+	"github.com/bopohaa/grafana/pkg/bus"
+	"github.com/bopohaa/grafana/pkg/components/dashdiffs"
+	"github.com/bopohaa/grafana/pkg/components/simplejson"
+	"github.com/bopohaa/grafana/pkg/log"
+	"github.com/bopohaa/grafana/pkg/metrics"
+	"github.com/bopohaa/grafana/pkg/middleware"
+	m "github.com/bopohaa/grafana/pkg/models"
+	"github.com/bopohaa/grafana/pkg/plugins"
+	"github.com/bopohaa/grafana/pkg/services/guardian"
+	"github.com/bopohaa/grafana/pkg/setting"
+	"github.com/bopohaa/grafana/pkg/util"
 )
 
 func isDashboardStarredByUser(c *middleware.Context, dashId int64) (bool, error) {

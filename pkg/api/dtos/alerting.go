@@ -3,9 +3,9 @@ package dtos
 import (
 	"time"
 
-	"github.com/grafana/grafana/pkg/components/null"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/bopohaa/grafana/pkg/components/null"
+	"github.com/bopohaa/grafana/pkg/components/simplejson"
+	m "github.com/bopohaa/grafana/pkg/models"
 )
 
 type AlertRule struct {

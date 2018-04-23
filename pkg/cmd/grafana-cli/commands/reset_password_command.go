@@ -3,11 +3,11 @@ package commands
 import (
 	"fmt"
 
+	"github.com/bopohaa/grafana/pkg/bus"
+	"github.com/bopohaa/grafana/pkg/cmd/grafana-cli/logger"
+	"github.com/bopohaa/grafana/pkg/models"
+	"github.com/bopohaa/grafana/pkg/util"
 	"github.com/fatih/color"
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/logger"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/util"
 )
 
 const AdminUserId = 1

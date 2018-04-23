@@ -4,11 +4,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/bopohaa/grafana/pkg/components/simplejson"
+	"github.com/bopohaa/grafana/pkg/log"
+	"github.com/bopohaa/grafana/pkg/services/sqlstore/sqlutil"
+	"github.com/bopohaa/grafana/pkg/tsdb"
 	"github.com/go-xorm/xorm"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/services/sqlstore/sqlutil"
-	"github.com/grafana/grafana/pkg/tsdb"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

@@ -8,12 +8,12 @@ import (
 	"io/ioutil"
 	"strings"
 
+	"github.com/bopohaa/grafana/pkg/bus"
+	"github.com/bopohaa/grafana/pkg/log"
+	m "github.com/bopohaa/grafana/pkg/models"
+	"github.com/bopohaa/grafana/pkg/setting"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/go-ldap/ldap"
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/log"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
 )
 
 type ILdapConn interface {

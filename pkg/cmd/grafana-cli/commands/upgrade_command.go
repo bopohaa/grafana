@@ -1,9 +1,9 @@
 package commands
 
 import (
+	"github.com/bopohaa/grafana/pkg/cmd/grafana-cli/logger"
+	s "github.com/bopohaa/grafana/pkg/cmd/grafana-cli/services"
 	"github.com/fatih/color"
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/logger"
-	s "github.com/grafana/grafana/pkg/cmd/grafana-cli/services"
 )
 
 func upgradeCommand(c CommandLine) error {

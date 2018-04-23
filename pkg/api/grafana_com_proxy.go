@@ -7,9 +7,9 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/grafana/grafana/pkg/middleware"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/bopohaa/grafana/pkg/middleware"
+	"github.com/bopohaa/grafana/pkg/setting"
+	"github.com/bopohaa/grafana/pkg/util"
 )
 
 var grafanaComProxyTransport = &http.Transport{

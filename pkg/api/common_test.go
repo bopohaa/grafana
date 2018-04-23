@@ -5,10 +5,10 @@ import (
 	"net/http/httptest"
 	"path/filepath"
 
+	"github.com/bopohaa/grafana/pkg/bus"
+	"github.com/bopohaa/grafana/pkg/middleware"
+	"github.com/bopohaa/grafana/pkg/models"
 	"github.com/go-macaron/session"
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/middleware"
-	"github.com/grafana/grafana/pkg/models"
 	macaron "gopkg.in/macaron.v1"
 
 	. "github.com/smartystreets/goconvey/convey"
