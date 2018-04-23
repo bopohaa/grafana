@@ -39,7 +39,7 @@ func init() {
 func NewClickhouseQueryEndpoint(datasource *models.DataSource) (tsdb.TsdbQueryEndpoint, error) {
 	u, err := url.Parse(datasource.Url)
 	if err != nil {
-		panic(err)
+		return nil, err
 	}
 
 	var cnnstr string
@@ -102,7 +102,7 @@ func (e *ClickhouseQueryEndpoint) Query(ctx context.Context, dsInfo *models.Data
 			continue
 		}
 
-		log.Info(rawQuery)
+		//log.Info(rawQuery)
 
 		queryResult.Meta.Set("sql", rawQuery)
 
