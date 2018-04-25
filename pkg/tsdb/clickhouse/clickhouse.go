@@ -247,6 +247,10 @@ func transformToTimeSeries(rows *sql.Rows, timeRange *tsdb.TimeRange, fillMissin
 	rowLimit := 1000000
 	rowCount := 0
 	timeIndex := 0
+	metricIndex := -1
+	if len(columnNames) > 2 && columnNames[1] == "metric" {
+		metricIndex = 1
+	}
 
 	for rows.Next() {
 		var timestamp float64
@@ -267,6 +271,15 @@ func transformToTimeSeries(rows *sql.Rows, timeRange *tsdb.TimeRange, fillMissin
 		// annotation and table queries.
 		convertSqlTimeColumnToEpochMs(values, timeIndex)
 
+		if metricIndex != -1 {
+			switch columnValue := values[metricIndex].(type) {
+			case *string:
+				metric = *columnValue
+			default:
+				return nil, 0, fmt.Errorf("Invalid type for column metric, must be of type string, got: %T %v", columnValue, columnValue)
+			}
+		}
+
 		switch columnValue := values[timeIndex].(type) {
 		case int64:
 			timestamp = float64(columnValue)
@@ -277,7 +290,7 @@ func transformToTimeSeries(rows *sql.Rows, timeRange *tsdb.TimeRange, fillMissin
 		}
 
 		for i, col := range columnNames {
-			if i == timeIndex {
+			if i == timeIndex || i == metricIndex {
 				continue
 			}
 
@@ -294,7 +307,9 @@ func transformToTimeSeries(rows *sql.Rows, timeRange *tsdb.TimeRange, fillMissin
 				return nil, 0, fmt.Errorf("Value column must have numeric datatype, column: %s type: %T value: %v", col, columnValue, columnValue)
 			}
 
-			metric = col
+			if metricIndex == -1 {
+				metric = col
+			}
 
 			series, exist := pointsBySeries[metric]
 			if !exist {
